@@ -3,6 +3,9 @@ import threading
 import time
 import json
 
+# check documentation on rate limiting
+# https://dev.twitter.com/rest/public/rate-limiting
+
 # Load our configuration from the JSON file.
 with open('config.json') as data_file:
     data = json.load(data_file)
@@ -71,6 +74,7 @@ def ScanForContests():
                 # post_list.append(item)
                 # print(item)
     except Exception as e:
+        print e
         print("Could not connect to TwitterAPI - are your credentials correct?")
 
 

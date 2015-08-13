@@ -5,6 +5,8 @@
 .idea
 *.iml
 config.json
+.travis.yml
+README.md
 out
 gen
 # Created by .ignore support plugin (hsz.mobi)
